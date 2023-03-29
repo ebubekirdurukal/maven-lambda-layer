@@ -52,6 +52,7 @@ under the License.
    | Default: ~/.m2/repository
   <localRepository>/path/to/local/repo</localRepository>
   -->
+<localRepository>/tmp/.m2/repository</localRepository>
 
   <!-- interactiveMode
    | This will determine whether maven prompts you when it needs input. If set to false,
@@ -156,7 +157,14 @@ under the License.
       <url>http://my.repository.com/repo/path</url>
     </mirror>
      -->
-  </mirrors>
+
+<mirror>
+  <id>central-secure</id>
+  <url>https://repo.maven.apache.org/maven2</url>
+  <mirrorOf>central</mirrorOf>
+</mirror>
+
+</mirrors>
   
   <!-- profiles
    | This is a list of profiles which can be activated in a variety of ways, and which can modify
