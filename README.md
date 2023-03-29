@@ -2,6 +2,12 @@
 
 An AWS Lambda layer that includes: git, java, maven.
 
+Layer ARN:
+
+arn:aws:lambda:us-east-1:833477537704:layer:mavengitjava:4
+
+
+
 
 zip -yr ../layer.zip .
 
